@@ -1,42 +1,199 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
         <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="/node_modules/bootstrap/scss/bootstrap.scss">
-    <title>Jiří Geryk - Servis</title>
-</head>
-<body>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <title>Jiří Geryk - Serivs</title>
+        <style>
+            #footer .container {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            @media (min-width: 1200px) {
+                .about_section .container {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .about_section .row {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    width: 100%;
+                }
+                .about_section .col-md-12 {
+                    text-align: center;
+                }
+                .about_section .col-md-6 {
+                    width: 48%;
+                }
+            }
+            #footer {
+                background-color: #343a40; /* Stejná barva jako bg-dark */
+                color: white; /* Textová barva pro lepší čitelnost */
+                padding: 20px 0;
+                margin-top: 15px;
+                width: 100%;
+                height: 100px;
+            }
+            .navbar-nav.ml-auto {
+                text-align: right;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main" class="">
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+            <a class="navbar-brand" href="index.html">
+                <div class="menu-logo">
+                    <div class="menu-logo-text">
+                        Servis plynových kotlů<br> Hlubočepy, Praha<br>
+                        <div style="font-size: 20px; vertical-align: bottom;">
+                            <i class="material-icons" style="vertical-align: bottom; font-size: 20px; color: #2c1ef0;">phone</i> +420 777 777 777
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#uvod" class="nav-link">Úvod</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#servis-kotle" class="nav-link">Servis kotle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#oprava-kotle" class="nav-link">Oprava kotle</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#uvedeni-do-provozu" class="nav-link">Uvedení do provozu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#kontakt" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <!-- Úvod Section -->
+        <section id="uvod">
+            <img src="/Pages/ASSETS/IMG/img.png" class="img-fluid" width="100%" alt="Responsive image">
+            <div class="container wow fadeInUp">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Provádíme:</h2>
+                        <h3 style="text-transform: none !important">Servis a opravy plynových kotlů - Hlubočepy, Praha a okolí</h3>
+                        <div class="section-title-divider"></div>
+                    </div>
+                    <div class="col-md-6">                       
+                        <p>Jsme autorizovaný servis značek <span class="text-bold">Vaillant, Protherm, Junkers - Bosch, Wolf</span>.<br>
+                            - pravidelný každoroční servis a čištění plynových kotlů<br>
+                            - opravy nefunkčních spotřebičů, výměny náhradních dílů<br>
+                            - kontroly odběrného plynového zařízení dle §3 vyhlášky č. 85/1978 Sb<br>
+                            - výměny, montáže, zapojení a nastavení termostatů, regulací<br>
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <iframe style="border:none" src="https://en.frame.mapy.cz/s/hevetahuna" width="500" height="333" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- Servis kotle Section -->
+        <section id="servis-kotle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Servis kotle</h2>
+                        <!-- Add your content here -->
+                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas facere voluptatem ducimus eos obcaecati alias quisquam nihil, non consequuntur iste reiciendis labore at eius illum accusantium hic id ut. Quasi, cumque? Quia quae adipisci ducimus dolore eum natus. Dolores, voluptatem?
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="navbar navbar-light bg-light navbar-expand-lg fixed-top">
-        <a href="#" class="navbar-brand">My Website</a>
-        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ml-auto">
-                <li class="navbar-item">
-                    <a href="#" class="nav-link">Homepage</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="nav-link">About Me</a>
-                </li>
-                <li class="navbar-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
+        <!-- Oprava kotle Section -->
+        <section id="oprava-kotle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Oprava kotle</h2>
+                        <!-- Add your content here -->
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus magnam perferendis repellendus excepturi maxime deleniti vel deserunt rem. Nemo accusantium ipsam debitis delectus similique cumque porro sint libero beatae officia qui autem non, id ad, natus aliquam! Sed, obcaecati? Est cumque corrupti facere dolore, laborum inventore at sed sequi quia in a aut, laboriosam modi! Repudiandae amet culpa nesciunt excepturi molestiae animi corrupti voluptatem voluptas consectetur harum, voluptatibus et.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Uvedení do provozu Section -->
+        <section id="uvedeni-do-provozu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Uvedení do provozu</h2>
+                        <!-- Add your content here -->
+                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim vel veniam illum est. Quos doloremque amet veritatis eius doloribus officiis enim deleniti, nesciunt obcaecati, hic incidunt quas. Officiis recusandae rerum, reprehenderit est eveniet molestiae, ullam nostrum debitis quas placeat ipsam blanditiis, eum non. Quo?
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kontakt Section -->
+        <section id="kontakt">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Kontakt</h2>
+                        <!-- Add your content here -->
+                        
+                    
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi aliquam veniam minus reprehenderit sunt praesentium a odio fuga soluta totam asperiores accusamus ea id, hic veritatis ducimus quidem, cum commodi libero? Quis nulla doloremque sequi rem alias, soluta placeat laboriosam temporibus, in veritatis quisquam eveniet autem suscipit? Pariatur, rerum modi.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="col-md-12">
+            <hr style="width: 100%;">
+            <img class="img-responsive img-width" src="imgs/vaillant-logo.png" alt="Vaillant">
+            <img class="img-responsive img-width" src="imgs/protherm-logo.png" alt="Protherm">
+            <img class="img-responsive img-width" src="imgs/junkers-logo.png" alt="Junkers">
+            <img class="img-responsive img-width" src="imgs/bosch-logo.png" alt="Bosch">
+            <hr style="width: 100%;">
         </div>
-    </div>
-    <!-- Optional JavaScript -->
+        </main>
+        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9/1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="copyright">
+                        © Copyright <strong>Jiří Geryk</strong>. Všechna práva vyhrazena
+                    </div>
+                    <div class="credits">
+                        <a href="#" target="_blank">Designed by <strong>N/A</strong></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
 </html>
