@@ -105,6 +105,13 @@
             align-items: center;
             justify-content: center;
         }
+
+        .img-small {
+            width: 55%;
+        }
+        .vaillant-logo {
+            height: 40%; /* Reduce height by 5% */
+        }
     </style>
 </head>
 
@@ -323,10 +330,18 @@
             <h3 class="text-center">Značky, se kterými pracujeme</h3>
 
             <div class="d-flex justify-content-center flex-wrap">
-                <img class="img-responsive img-width m-2" src="imgs/vaillant-logo.png" alt="Vaillant">
-                <img class="img-responsive img-width m-2" src="imgs/protherm-logo.png" alt="Protherm">
-                <img class="img-responsive img-width m-2" src="imgs/junkers-logo.png" alt="Junkers">
-                <img class="img-responsive img-width m-2" src="imgs/bosch-logo.png" alt="Bosch">
+                <div class="col-6 col-md-3 p-2">
+                    <img class="img-responsive img-width m-4 img-small" src="ASSETS/IMG/bosch-logo.png" alt="Bosch">
+                </div>
+                <div class="col-6 col-md-3 p-2">
+                    <img class="img-responsive img-width m-4 img-small" src="ASSETS/IMG/junkers-logo.png" alt="Junkers">
+                </div>
+                <div class="col-6 col-md-3 p-2">
+                    <img class="img-responsive img-width m-4 img-small" src="ASSETS/IMG/protherm-logo.png" alt="Protherm">
+                </div>
+                <div class="col-6 col-md-3 p-2">
+                    <img class="img-responsive img-width m-4 img-small vaillant-logo" src="ASSETS/IMG/vaillant-logo.png" alt="Vaillant">
+                </div>
             </div>
         </div>
     </main>
