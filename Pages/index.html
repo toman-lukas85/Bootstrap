@@ -77,11 +77,22 @@
         select.form-control::-ms-expand {
             display: none;
         }
+
+        /* Custom style for the file input label */
+        .custom-file-label::after {
+            content: "Vyberte soubor";
+            color: #6c757d;
+        }
+
+        /* Align the custom file input label to the left */
+        .custom-file-label {
+            text-align: left;
+        }
     </style>
 </head>
 
 <body>
-    <main id="main" class="">
+    <main id="main" class="bg-light">
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
             <a class="navbar-brand" href="index.html">
                 <div class="menu-logo">
@@ -120,8 +131,7 @@
         </nav>
 
         <!-- Úvod Section -->
-        <section id="uvod">
-            <hr>
+        <section id="uvod" class="bg-light">
             <img src="/Pages/ASSETS/IMG/img.png" class="img-fluid" width="100%" alt="Responsive image">
             <div class="container wow fadeInUp">
                 <div class="row">
@@ -152,12 +162,13 @@
         </section>
 
         <!-- Servis kotle Section -->
-        <section id="servis-kotle">
-            <hr>
+        <section id="servis-kotle" class="bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
+                        <br>
                         <h2>Servis kotle</h2>
+                        <br>
                         <!-- Add your content here -->
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas
                         facere voluptatem ducimus eos obcaecati alias quisquam nihil, non consequuntur iste reiciendis
@@ -169,12 +180,13 @@
         </section>
 
         <!-- Oprava kotle Section -->
-        <section id="oprava-kotle">
-            <hr>
+        <section id="oprava-kotle" class="bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
+                        <br>
                         <h2>Oprava kotle</h2>
+                        <br>
                         <!-- Add your content here -->
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium doloribus magnam
                         perferendis repellendus excepturi maxime deleniti vel deserunt rem. Nemo accusantium ipsam
@@ -188,12 +200,13 @@
         </section>
 
         <!-- Uvedení do provozu Section -->
-        <section id="uvedeni-do-provozu">
-            <hr>
+        <section id="uvedeni-do-provozu" class="bg-white">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
+                        <br>
                         <h2>Uvedení do provozu</h2>
+                        <br>
                         <!-- Add your content here -->
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim vel veniam illum est. Quos
                         doloremque amet veritatis eius doloribus officiis enim deleniti, nesciunt obcaecati, hic
@@ -205,11 +218,11 @@
         </section>
 
         <!-- Kontakt Section -->
-        <section id="kontakt">
-            <hr>
+        <section id="kontakt" class="bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
+                        <br>
                         <h2>Kontakt</h2>
                         <br>
                         <div class="d-flex justify-content-center align-items-center">
@@ -228,25 +241,25 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="name">Jméno</label>
                                                     <div class="col-sm-9">
-                                                        <input type="text" class="form-control" placeholder="Jméno a příjmení" id="name">
+                                                        <input type="text" class="form-control" placeholder="Jméno a příjmení" id="name" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="email">Email</label>
                                                     <div class="col-sm-9">
-                                                        <input type="email" class="form-control" placeholder="myname@domain.com" id="email">
+                                                        <input type="email" class="form-control" placeholder="myname@domain.com" id="email" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="phone">Telefon</label>
                                                     <div class="col-sm-9">
-                                                        <input type="tel" class="form-control" pattern="\+420 [0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+420 000 000 000" id="phone">
+                                                        <input type="tel" class="form-control" pattern="\[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+ 420-000-000-000" id="phone" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="type">Typ</label>
                                                     <div class="col-sm-9">
-                                                        <select class="form-control" id="type">
+                                                        <select class="form-control" id="type" required>
                                                             <option value="" disabled selected>Vyberte čeho se dotaz týká</option>
                                                             <option value="service">Servis kotle</option>
                                                             <option value="repair">Oprava kotle</option>
@@ -258,7 +271,16 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="question">Váš dotaz</label>
                                                     <div class="col-sm-9">
-                                                        <textarea class="form-control" placeholder="Text dotazu" id="question" rows="4"></textarea>
+                                                        <textarea class="form-control" placeholder="Text dotazu" id="question" required rows="4"></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group row">
+                                                    <label class="col-sm-3 col-form-label" for="inputGroupFile02">Příloha</label>
+                                                    <div class="col-sm-9">
+                                                        <div class="custom-file">
+                                                            <input type="file" class="custom-file-input" id="inputGroupFile02" data-browse="Vybrat">
+                                                            <label class="custom-file-label" for="inputGroupFile02">Vyberte soubor</label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -280,13 +302,16 @@
             </div>
         </section>
 
-        <div class="col-md-12">
-            <hr style="width: 100%;">
-            <img class="img-responsive img-width" src="imgs/vaillant-logo.png" alt="Vaillant">
-            <img class="img-responsive img-width" src="imgs/protherm-logo.png" alt="Protherm">
-            <img class="img-responsive img-width" src="imgs/junkers-logo.png" alt="Junkers">
-            <img class="img-responsive img-width" src="imgs/bosch-logo.png" alt="Bosch">
-            <hr style="width: 100%;">
+        <div class="col-md-12 bg-white">
+            <br>
+            <h3 class="text-center">Značky, se kterými pracujeme</h3>
+
+            <div class="d-flex justify-content-center flex-wrap">
+                <img class="img-responsive img-width m-2" src="imgs/vaillant-logo.png" alt="Vaillant">
+                <img class="img-responsive img-width m-2" src="imgs/protherm-logo.png" alt="Protherm">
+                <img class="img-responsive img-width m-2" src="imgs/junkers-logo.png" alt="Junkers">
+                <img class="img-responsive img-width m-2" src="imgs/bosch-logo.png" alt="Bosch">
+            </div>
         </div>
     </main>
     <!-- Optional JavaScript -->
