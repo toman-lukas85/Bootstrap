@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -66,7 +65,7 @@
             -moz-appearance: none;
             appearance: none;
             background-color: white;
-            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5"><path fill="none" stroke="%23007bff" stroke-width="1" d="M0 0l2 2 2-2"/></svg>');
+            background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="5" viewBox="0 0 4 5"><path fill="none" stroke="%23007bff" stroke-wi[...]');
             background-repeat: no-repeat;
             background-position: right 0.75rem center;
             background-size: 8px 10px;
@@ -88,8 +87,8 @@
         .custom-file-label {
             text-align: left;
         }
-               /* Custom class for reducing <br class="small-br"> size */
-               .small-br {
+           /* Custom class for reducing <br class="small-br"> size */
+           .small-br {
             line-height: 0.3;
         }
 
@@ -112,12 +111,39 @@
         .vaillant-logo {
             height: 40%; /* Reduce height by 5% */
         }
-        .nav-link:hover{
-            cursor: pointer;
-           text-decoration: underline;
-            color: #5e79f1 !important; /* Modrá barva */
+
+        /* Mobile (375px and more) */
+        @media (min-width: 375px) {
+            /* Example: Adjusting text size for mobile */
+            .navbar-brand h5 {
+                font-size: 18px;
+            }
+            .navbar-brand .material-icons {
+                font-size: 18px;
+            }
         }
-   
+
+        /* Tablet (768px and more) */
+        @media (min-width: 768px) {
+            /* Example: Adjusting layout for tablet */
+            .navbar-brand h5 {
+                font-size: 20px;
+            }
+            .navbar-brand .material-icons {
+                font-size: 20px;
+            }
+        }
+
+        /* Desktop (1280px and more) */
+        @media (min-width: 1280px) {
+            /* Example: Adjusting layout for desktop */
+            .navbar-brand h5 {
+                font-size: 24px;
+            }
+            .navbar-brand .material-icons {
+                font-size: 24px;
+            }
+        }
     </style>
 </head>
 
@@ -130,7 +156,7 @@
                         <h5>Servis plynových kotlů Jiří Geryk </h5>
                         <div style="font-size: 20px; vertical-align: bottom;">
                             <i class="material-icons"
-                                style="vertical-align: bottom; font-size: 20px; color: #5e79f1;">phone</i> +420 777 777
+                                style="vertical-align: bottom; font-size: 20px; color: #2c1ef0;">phone</i> +420 777 777
                             777
                         </div>
                     </div>
@@ -174,17 +200,18 @@
                         <div class="section-title-divider"></div>
                     </div>
                     <br class="small-br">
-                    <div class="col-md-6 text-center">
-                        <h5>Jsme autorizovaný servis značek <span class="text-bold">Vaillant, Protherm, Junkers - Bosch,
-                                Wolf</span>.<br>
-                                <br>- pravidelný každoroční servis a čištění plynových kotlů<br>
-                                <br>- opravy nefunkčních spotřebičů, výměny náhradních dílů<br>
-                                <br>- kontroly odběrného plynového zařízení dle §3 vyhlášky č. 85/1978 Sb<br>
-                                <br>- výměny, montáže, zapojení a nastavení termostatů, regulací<br>
-                        </h5>
+                    <div class="col-md-6">
+                        <p>Jsme autorizovaný servis značek <span class="text-bold">Vaillant, Protherm, Junkers - Bosch,
+                                Wolf</span>.<br class="small-br">
+                            - pravidelný každoroční servis a čištění plynových kotlů<br class="small-br">
+                            - opravy nefunkčních spotřebičů, výměny náhradních dílů<br class="small-br">
+                            - kontroly odběrného plynového zařízení dle §3 vyhlášky č. 85/1978 Sb<br class="small-br">
+                            - výměny, montáže, zapojení a nastavení termostatů, regulací<br class="small-br">
+                        </p>
                     </div>
-                    <div class="col-md-5">
-                        <iframe style="border:none" src="https://en.frame.mapy.cz/s/cacolubeme" width="600" height="480" frameborder="0"></iframe>
+                    <div class="col-md-6">
+                        <iframe style="border:none" src="https://en.frame.mapy.cz/s/hevetahuna" width="100%" height="333"
+                            frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
@@ -281,7 +308,7 @@
                                                 <div class="form-group row">
                                                     <label class="col-sm-3 col-form-label" for="phone">Telefon</label>
                                                     <div class="col-sm-9">
-                                                        <input type="tel" class="form-control" pattern="\[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+ 420-000-000-000" id="phone" required>
+                                                        <input type="tel" class="form-control" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" placeholder="+ 420-000-000-000" id="phone" required>
                                                     </div>
                                                 </div>
                                                 <div class="form-group row">
@@ -366,10 +393,10 @@
             <div class="row">
                 <div class="col-md-12 text-center">
                     <div class="copyright">
-                        © Copyright <strong>Jiří Geryk</strong>. Všechna práva vyhrazena
+                        © Copyright <strong>Lukas Toman</strong>. Všechna práva vyhrazena
                     </div>
                     <div class="credits">
-                        <a href="#" target="_blank">Designed by Lukas Toman</a>
+                        <a href="#" target="_blank">Designed by Lukas Toman<strong>N/A</strong></a>
                     </div>
                 </div>
             </div>
