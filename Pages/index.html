@@ -4,16 +4,23 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Google Fonts - Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Other CSS files -->
     <link rel="stylesheet" href="CSS/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+    
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Jiří Geryk - Serivs plynových kotlů</title>
     <style>
+        /* Set Source Sans Pro as default font for entire page */
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+        
         /* Prevent horizontal scrolling */
         html, body {
             overflow-x: hidden;
@@ -149,57 +156,89 @@
                 font-size: 24px;
             }
         }
+
+        /* Mobile responsiveness with fixed minimum height */
+        @media (max-width: 991.98px) {
+            .navbar {
+                min-height: 123px !important;
+            }
+            
+            #navbarCollapse {
+                background-color: #343a40;
+                padding: 10px;
+            }
+            
+            .navbar-collapse {
+                position: absolute;
+                top: 123px;
+                left: 0;
+                right: 0;
+                z-index: 1030;
+            }
+            
+            .navbar-collapse .navbar-nav {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <main id="main" class="bg-light">
-        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
-            <a class="navbar-brand" href="index.html">
-                <div class="menu-logo">
-                    <div class="menu-logo-text">
-                        <h5>Servis plynových kotlů Jiří Geryk </h5>
-                        <div style="font-size: 20px; vertical-align: bottom;">
-                            <i class="material-icons"
-                                style="vertical-align: bottom; font-size: 20px; color: #2c1ef0;">phone</i> +420 777 777
-                            777
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="min-height: 123px; width: 100%;">
+            <div class="container-fluid" style="max-width: 125%;">
+                <a class="navbar-brand d-md" href="index.html">
+                    <div class="menu-logo d-flex align-items-center">
+                        <div class="menu-logo-text d-flex flex-column align-items-start">
+                            <span style="font-size: 27px; margin-bottom: 5px;">Servis plynových kotlů Jiří Geryk</span>
+                            <div class="d-flex">
+                                <a href="mailto:jirka.geryk@seznam.cz" style="color: rgb(174, 172, 172); text-decoration: none; font-size: 19px; margin-right: 15px;">
+                                    jirka.geryk@seznam.cz
+                                </a>
+                                <span style="font-size: 19px; color: rgb(174, 172, 172);">
+                                    +420 728 016 918
+                                </span>
+                            </div>
                         </div>
                     </div>
-        <nav class=" mh-100;navbar navbar-dark bg-dark navbar-expand-lg fixed-top" style="height: auto;">
-                <div class="menu-logo-text">
-                <h5>Servis plynových kotlů Jiří Geryk</h5>
-                <div style="font-size: 20px; vertical-align: center;">
-                    <i class="material-icons"
-                    style="vertical-align: bottom; font-size: 20px; color: #2c1ef0;">phone</i> +420 728 016 918
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#uvod" class="nav-link" style="font-size: 23px;">Úvod</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#servis-kotle" class="nav-link" style="font-size: 23px;">Servis kotle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#oprava-kotle" class="nav-link" style="font-size: 23px;">Oprava kotle</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#uvedeni-do-provozu" class="nav-link" style="font-size: 23px;">Uvedení do provozu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#kontakt" class="nav-link" style="font-size: 23px;">Kontakt</a>
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="#uvod" class="nav-link">Úvod</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#servis-kotle" class="nav-link">Servis kotle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#oprava-kotle" class="nav-link">Oprava kotle</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#uvedeni-do-provozu" class="nav-link">Uvedení do provozu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#kontakt" class="nav-link">Kontakt</a>
-                    </li>
-                </ul>
             </div>
         </nav>
+        <style>
+            .menu-logo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                font-size: 1.2rem; /* Increase font size for better visibility */
+            }
+        </style>
 
         <!-- Úvod Section -->
         <section id="uvod" class="bg-light">
-            <img src="/Pages/ASSETS/IMG/img.png" class="img-fluid" width="100%" alt="Responsive image">
+            <div style="width: 100%; background-color: white; height: 200px;"></div>
             <div class="container-fluid wow fadeInUp">
                 <div class="row">
                     <div class="col-md-12 text-center">
