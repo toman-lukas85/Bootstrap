@@ -217,9 +217,6 @@
                             <a href="#oprava-kotle" class="nav-link" style="font-size: 23px;">Oprava kotle</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#uvedeni-do-provozu" class="nav-link" style="font-size: 23px;">Uvedení do provozu</a>
-                        </li>
-                        <li class="nav-item">
                             <a href="#kontakt" class="nav-link" style="font-size: 23px;">Kontakt</a>
                         </li>
                     </ul>
@@ -237,17 +234,33 @@
             
             #uvod {
                 background-color: rgb(253, 249, 243);
+                padding-top: 150px; /* Base padding to prevent navbar overlap */
             }
             
-            /* Increase image and text size on large screens */
+            /* Base font size for mobile */
+            #uvod .col-md-6 p {
+                font-size: 16px; /* Standard size for mobile */
+            }
+            
+            /* Responsive padding adjustments and increased sizes for larger screens */
+            @media (min-width: 768px) {
+                #uvod {
+                    padding-top: 160px;
+                }
+            }
+            
             @media (min-width: 1200px) {
+                #uvod {
+                    padding-top: 170px;
+                }
+                
                 #uvod .col-md-3 img {
                     width: 115%; /* Make image 15% larger on big screens */
                     margin-right: 20%; /* Add 20% more space to the right of the logo */
                 }
                 
-                #uvod .col-md-9 p {
-                    font-size: 115%; /* Make text 15% larger on big screens */
+                #uvod .col-md-6 p {
+                    font-size: 21px; /* Larger text size only on desktop */
                     line-height: 1.6;
                 }
             }
@@ -255,7 +268,6 @@
 
         <!-- Úvod Section -->
         <section id="uvod">
-            <div style="width: 100%; height: 200px;"></div>
             <div class="container-fluid wow fadeInUp">
                 <div class="row">
                     <div class="col-md-12 text-center">
@@ -267,11 +279,11 @@
                         <div class="section-title-divider"></div>
                     </div>
                     <br class="small-br">
-                    <div class="row w-100 mx-0">
-                        <div class="col-md-3 text-left d-flex justify-content-center align-items-center">
+                    <div class="row w-100 mx-0 justify-content-center">
+                        <div class="col-md-4 text-center d-flex justify-content-end align-items-center">
                             <img src="/Pages/ASSETS/IMG/logo_JG.png" alt="Logo Jiří Geryk" class="img-responsive img-width m-4 img-small">
                         </div>
-                        <div class="col-md-9 d-flex align-items-center">
+                        <div class="col-md-6 d-flex align-items-center">
                             <p>- servis a opravy <span class="text-bold">Vaillant, Protherm, Junkers (Bosch),
                                 Buderus</span>.<br class="small-br">
                             - montáže plynových a elektrických kotlů<br class="small-br">
@@ -293,11 +305,45 @@
                         <br class="small-br">
                         <h2>Servis kotle</h2>
                         <br class="small-br">
-                        <!-- Add your content here -->
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias exercitationem voluptas
-                        facere voluptatem ducimus eos obcaecati alias quisquam nihil, non consequuntur iste reiciendis
-                        labore at eius illum accusantium hic id ut. Quasi, cumque? Quia quae adipisci ducimus dolore eum
-                        natus. Dolores, voluptatem?
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-md-10 text-left">
+                                    <h4>🔧 Základní péče o kotel: Udržujte teplo i bezpečí</h4>
+                                    <p>Pravidelná údržba kotle je základem jeho správné funkce, dlouhé životnosti a bezpečného provozu. Díky odborné péči předejdete poruchám, snížíte spotřebu energie a zajistíte bezproblémový chod topného systému.</p>
+                                    
+                                    <h4 class="mt-4">🛠️ Z čeho se údržba skládá?</h4>
+                                    <p>Naše kompletní servisní služba zahrnuje následující kroky:</p>
+                                    
+                                    <ul class="mt-3">
+                                        <li>
+                                            <strong>Pečlivá kontrola jednotlivých komponentů</strong>
+                                            <p>Pro detailní dohled a přístup ke všem částem</p>
+                                        </li>
+                                        <li>
+                                            <strong>Čištění</strong>
+                                            <p>Odstranění usazenin, prachu a spalin z výměníku tepla, hořáků i ventilátorů</p>
+                                        </li>
+                                        <li>
+                                            <strong>Seřízení</strong>
+                                            <p>Optimalizace spalovacího procesu<br>
+                                            Nastavení tlaků, teploty a parametrů dle technických specifikací výrobce</p>
+                                        </li>
+                                        <li>
+                                            <strong>Měření spalin</strong>
+                                            <p>Vyhodnocení spalovacího procesu pomocí analyzátoru spalin<br>
+                                            Zajištění ekologického a bezpečného provozu zařízení</p>
+                                        </li>
+                                        <li>
+                                            <strong>Kontrola těsnosti</strong>
+                                            <p>Testování plynových a vodních spojů<br>
+                                            Zajištění bezpečnosti a úniku plynů</p>
+                                        </li>
+                                    </ul>
+                                    
+                                    <p class="mt-4">🔍 Naši technici používají profesionální nástroje a dodržují nejvyšší bezpečnostní standardy, aby váš kotel fungoval spolehlivě po celý rok.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -323,23 +369,7 @@
             </div>
         </section>
 
-        <!-- Uvedení do provozu Section -->
-        <section id="uvedeni-do-provozu" class="bg-white">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <br class="small-br">
-                        <h2>Uvedení do provozu</h2>
-                        <br class="small-br">
-                        <!-- Add your content here -->
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui enim vel veniam illum est. Quos
-                        doloremque amet veritatis eius doloribus officiis enim deleniti, nesciunt obcaecati, hic
-                        incidunt quas. Officiis recusandae rerum, reprehenderit est eveniet molestiae, ullam nostrum
-                        debitis quas placeat ipsam blanditiis, eum non. Quo?
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <!-- Kontakt Section -->
         <section id="kontakt" class="bg-light">
