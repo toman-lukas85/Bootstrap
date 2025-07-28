@@ -234,14 +234,30 @@
                 text-align: center;
                 font-size: 1.2rem; /* Increase font size for better visibility */
             }
+            
+            #uvod {
+                background-color: rgb(253, 249, 243);
+            }
+            
+            /* Increase image and text size on large screens */
+            @media (min-width: 1200px) {
+                #uvod .col-md-3 img {
+                    width: 115%; /* Make image 15% larger on big screens */
+                }
+                
+                #uvod .col-md-9 p {
+                    font-size: 115%; /* Make text 15% larger on big screens */
+                    line-height: 1.6;
+                }
+            }
         </style>
 
         <!-- Úvod Section -->
-        <section id="uvod" class="bg-light">
-            <div style="width: 100%; background-color: white; height: 200px;"></div>
+        <section id="uvod">
+            <div style="width: 100%; height: 200px;"></div>
             <div class="container-fluid wow fadeInUp">
                 <div class="row">
-                    <div class="col-md-12 text-center" backkground-color: rgb(253 249 243);>
+                    <div class="col-md-12 text-center">
                         <br class="small-br">
                         <h2>Provádíme:</h2>
                         <h3 style="text-transform: none !important">Servis a opravy plynových kotlů - Praha a
@@ -250,16 +266,20 @@
                         <div class="section-title-divider"></div>
                     </div>
                     <br class="small-br">
-                    <div class="col-md-6">
-                        <p>- servis a opravy <span class="text-bold">Vaillant, Protherm, Junkers (Bosch),
+                    <div class="row w-100 mx-0">
+                        <div class="col-md-3 text-left d-flex justify-content-center align-items-center">
+                            <img src="/Pages/ASSETS/IMG/logo_JG.png" alt="Logo Jiří Geryk" class="img-responsive img-width m-4 img-small">
+                        </div>
+                        <div class="col-md-9 d-flex align-items-center">
+                            <p>- servis a opravy <span class="text-bold">Vaillant, Protherm, Junkers (Bosch),
                                 Buderus</span>.<br class="small-br">
                             - montáže plynových a elektrických kotlů<br class="small-br">
                             - topenářské a instalatérské práce<br class="small-br">
                             - kontroly odběrného plynového zařízení dle §3 vyhlášky č. 85/1978 Sb<br class="small-br">
                             - výměny, montáže, zapojení a nastavení termostatů, regulací<br class="small-br">
-                        </p>
+                            </p>
+                        </div>
                     </div>
-        
                 </div>
             </div>
         </section>
